@@ -2,6 +2,9 @@
 #include <conio.h>
 using namespace std;
 
+const int MAX_SIZE = 50; 
+int arry[MAX_SIZE]; 
+int n; 
 
 void dMenu(){
 system("cls");
