@@ -49,6 +49,32 @@ void SepatahKata(){
   getch();
 }
 
+void inputQuotes() {
+    system("cls");
+    if (totalQuotes >= MAX_SIZE) {
+        cout << "Maksimum kata bijak tercapai!\n";
+        getch();
+        return;
+    }
+    cout << "Masukkan kata bijak: ";
+    cin.ignore();
+    getline(cin, quotes[totalQuotes]);
+    totalQuotes++;
+    cout << "Kata bijak telah disimpan!\n";
+    getch();
+}
+
+void displayQuotes() {
+    system("cls");
+    if (totalQuotes == 0) {
+        cout << "Belum ada kata bijak yang dimasukkan.\n";
+    } else {
+        int idx = rand() % totalQuotes;
+        cout << "Kata Bijak Hari Ini:\n\"" << quotes[idx] << "\"\n";
+    }
+    getch();
+}
+
 int main() {
 char pl;
 do
