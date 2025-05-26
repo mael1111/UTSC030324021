@@ -103,6 +103,12 @@ do
   case '5':
     /* code */
     break;
+    case '6':
+    inputQuotes();
+    break;
+    case '7':
+    displayQuotes();
+    break;
   
   default:
     system("cls");
