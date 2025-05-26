@@ -17,7 +17,9 @@ cout<<"2. Menampilkan data"<<"\n";
 cout<<"3. Sorting"<<"\n";           
 cout<<"4. Sepatah Kata"<<"\n";            
 cout<<"5. Exit"<<"\n";           
-cout<<"Masukan angka :";        
+cout<<"Masukan angka :";    
+cout<<"6. Masukkan Kata Bijak"<<"\n";             
+cout<<"7. Tampilkan Kata Bijak Acak"<<"\n";    
 
 }
 void inputData(){
@@ -35,7 +37,6 @@ void inputData(){
     cin >> arry[i];
   }
 }
-
 
 void mPertama(string pesan){
 system("cls");
