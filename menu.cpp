@@ -6,9 +6,12 @@ const int MAX_SIZE = 50;
 int arry[MAX_SIZE]; 
 int n; 
 
+string quotes[MAX_SIZE];  
+int totalQuotes = 0;
+
 void dMenu(){
 system("cls");
-cout<<"Aplikasi Sorting Buble"<<"\n";       
+cout<<"Aplikasi Sorting Bubble"<<"\n";       
 cout<<"1. Memasukkan data"<<"\n";            
 cout<<"2. Menampilkan data"<<"\n";            
 cout<<"3. Sorting"<<"\n";           
@@ -17,6 +20,22 @@ cout<<"5. Exit"<<"\n";
 cout<<"Masukan angka :";        
 
 }
+void inputData(){
+  system("cls");
+  cout << "Masukkan jumlah elemen array (MAKSIMAL 50) :";
+  cin >> n;
+  if (n > MAX_SIZE) {
+    cout << "Jumlah elemen melebihi batas maksimum!" << endl;
+    getch();
+    return;
+  }
+  cout << "Masukkan " << n << " angka:\n";
+  for (int i = 0; i < n; ++i) {
+    cout << "Elemen ke-" << i + 1 << ": ";
+    cin >> arry[i];
+  }
+}
+
 
 void mPertama(string pesan){
 system("cls");
